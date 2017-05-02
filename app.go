@@ -4,6 +4,9 @@ import (
 	"os"
 
 	"github.com/codegangsta/negroni"
+	"net/http"
+	"github.com/gorilla/mux"
+	"fmt"
 )
 
 func main() {
@@ -18,4 +21,16 @@ func main() {
 	}
 
 	n.Run(":" + port)
+}
+
+func buildRoutes() http.Handler {
+	r := mux.NewRouter()
+	r.HandleFunc("/", helloWorldHandler).
+		Methods("GET")
+
+	return r
+}
+
+func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w, "Hello, world!\n")
 }
