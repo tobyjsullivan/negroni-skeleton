@@ -3,10 +3,11 @@ package main
 import (
 	"os"
 
-	"github.com/codegangsta/negroni"
-	"net/http"
-	"github.com/gorilla/mux"
 	"fmt"
+	"net/http"
+
+	"github.com/codegangsta/negroni"
+	"github.com/gorilla/mux"
 )
 
 func main() {
