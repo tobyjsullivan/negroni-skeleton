@@ -1,21 +1,20 @@
 {
 	"ImportPath": "github.com/tobyjsullivan/negroni-skeleton",
-	"GoVersion": "go1.6",
-	"GodepVersion": "v62",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./"
+	],
 	"Deps": [
 		{
-			"ImportPath": "github.com/codegangsta/negroni",
-			"Comment": "v0.1-70-gc7477ad",
-			"Rev": "c7477ad8e330bef55bf1ebe300cf8aa67c492d1b"
-		},
-		{
-			"ImportPath": "github.com/gorilla/context",
-			"Rev": "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
-		},
-		{
 			"ImportPath": "github.com/gorilla/mux",
-			"Comment": "v1.1",
-			"Rev": "0eeaf8392f5b04950925b8a69fe70f110fa7cbfc"
+			"Comment": "v1.3.0-5-g599cba5",
+			"Rev": "599cba5e7b6137d46ddf58fb1765f5d928e69604"
+		},
+		{
+			"ImportPath": "github.com/urfave/negroni",
+			"Comment": "v0.2.0-115-g1d8981a",
+			"Rev": "1d8981a52d6bda4467a9faacf3fdddd38222dfc4"
 		}
 	]
 }
